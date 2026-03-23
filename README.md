@@ -1,35 +1,44 @@
-# Pykemon - Python Fundamentals Project
+# Pykemon: Análisis de Datos Pokémon con Python 🐉🐍
 
-This project was developed as part of the **Information Systems Fundamentals** course (Information Systems Engineering Degree). The objective is to apply Python programming skills to analyze and manipulate data from a real-world dataset.
+Este proyecto ha sido desarrollado para la asignatura **Fundamentos de Sistemas de Información** del Grado en Ingeniería Informática. El objetivo principal es demostrar la competencia en el uso de Python para el procesamiento, almacenamiento y visualización de datos utilizando un dataset real de Pokémon.
 
-For this project, the **Pokémon Dataset** was used, containing statistics and information for generations 1 to 6.
+## 📊 Sobre el Dataset
+El proyecto utiliza el archivo `15_pokemon.csv`, que incluye estadísticas detalladas de las primeras 6 generaciones:
+* **Identificadores**: ID, Nombre y Tipos (1 y 2).
+* **Estadísticas de combate**: HP, Ataque, Defensa, Sp. Atk, Sp. Def y Velocidad.
+* **Atributos**: Generación y estado de Legendario.
 
-## 📁 Project Structure
+## 📁 Estructura del Proyecto (P1 - P6)
+Siguiendo los requisitos académicos, el código se organiza en seis paquetes dentro de la carpeta `/Experimentos`. Cada uno resuelve una etapa distinta del tratamiento de datos:
 
-Following the requirements of the assignment, the repository is organized into six packages (`P1` to `P6`), each addressing a specific problem:
+| Paquete | Descripción | Archivos Clave |
+| :--- | :--- | :--- |
+| **P1** | Fundamentos de lógica, condicionales y estructuras básicas. | `P1.py` |
+| **P2** | Programación Orientada a Objetos (POO) y modelado de datos. | `P2.py`, `P2_UML.png` |
+| **P3** | Persistencia de datos mediante **SQLite** y gestión de bases de datos. | `P3.py`, `pokemon.db` |
+| **P4** | Manipulación avanzada de datos y lógica de negocio. | `P4.py` |
+| **P5** | Análisis exploratorio con **Pandas** (Filtrado, limpieza y agrupación). | `p5.ipynb` |
+| **P6** | Visualización de datos con **Seaborn** y **Matplotlib**. | `P6.ipynb`, `*.png` |
 
-* **P1**: Basic Python scripts and logic.
-* **P2**: Working with Object-Oriented Programming (OOP) and data structures.
-* **P3**: SQLite database integration and management.
-* **P4**: Advanced data manipulation.
-* **P5 (Analysis)**: Data analysis using **Pandas**. Includes filtering, column operations, and grouping.
-* **P6 (Visualization)**: Data visualization using **Seaborn**. Generates a `grafica.png` file with insights from the dataset.
+---
 
-## 📊 Dataset Information
-The file `15_pokemon.csv` contains the following attributes:
-* **Names & Types**: Name, Type 1, and Type 2.
-* **Stats**: HP, Attack, Defense, Sp. Atk, Sp. Def, and Speed.
-* **Metadata**: Generation and Legendary status.
+## 📈 Análisis y Visualizaciones
+El módulo **P6** automatiza la generación de conocimiento visual a partir del dataset bruto. Algunos de los análisis incluidos son:
 
-## 🛠️ Requirements
-To run the notebooks and scripts in this repository, you will need:
-* Python 3.x
-* Pandas
-* Seaborn
-* Matplotlib
-* SQLite3
+* **Distribución de HP por tipo**: Comparativa de la salud base según el tipo elemental.
+* **Correlación de tipos**: Análisis de las combinaciones de tipos más comunes y sus estadísticas medias.
+* **Frecuencia de Tipos**: Gráfico de barras que muestra la predominancia de ciertos tipos en las 6 generaciones.
 
-## 🚀 How to use
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/eLeCe2611/Pykemon.git](https://github.com/eLeCe2611/Pykemon.git)
+![Ejemplo de Gráfica](Experimentos/P6/tipo_x_hp_medio.png)
+
+## 📝 Documentación Adicional
+* **Enunciado**: El archivo `Trabajo de Python.pdf` detalla los criterios de evaluación y los objetivos pedagógicos.
+* **Modelado**: En la carpeta `P2` se incluye un diagrama UML que describe la arquitectura de clases utilizada.
+* **Entorno**: El proyecto incluye la configuración de **PyCharm** (carpeta `.idea`) para facilitar su revisión técnica.
+* **Ejemplos**: Se incluye una carpeta `Ejemplo` con datasets alternativos utilizados durante la fase de pruebas.
+
+## 👤 Autor
+* **Luis Carmona** - [@eLeCe2611](https://github.com/eLeCe2611)
+
+---
+*Este proyecto tiene fines puramente académicos para el Grado de Ingeniería Informática.*
